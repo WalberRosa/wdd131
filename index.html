@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Walber Barreto Rosa</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Walber Barreto Rosa - Overview of dynamic web development and essential resources">
+    <meta name="Author" content="Walber Barreto Rosa">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Walber</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Walber Rosa</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/" target="https://www.linkedin.com/in/w%C3%A1lber-rosa/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" target="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="https://www.churchofjesuschrist.org/study/scriptures/ot/ps/91?lang=por">Scripture</a></li>
+                <li><a href="#final-project" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Introduction to Dynamic Web Development</h2>
+            <p>Welcome to WDD 131! This course is designed to help you master dynamic web fundamentals.</p>
+            <img src="images/myimage.jpeg" alt="My Image" class="image"/>
+            <p>Resources:            
+                <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a>,
+                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>,
+                <a href="https://css-tricks.com" target="_blank">CSS Tricks</a>.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Getting Started</h2>
+            <p>Begin your web development journey by setting up your tools and environment.</p>
+            <img src="images/tool.png" alt="Tools Setup" class="tool"/>
+            <p>Resources: 
+                <a href="https://code.visualstudio.com" target="_blank">VS Code</a>, 
+                <a href="https://github.com" target="_blank">GitHub</a>, 
+                <a href="https://web.dev" target="_blank">Web.dev</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Walber Rosa. Rio de Janeiro, Brazil.
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
