@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples - Dynamic Web</title>
+    <meta name="description" content="Explore beautiful temples around the world.">
+    <meta name="author" content="Walber Barreto Rosa">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temples of the World</h1>
+        <nav>
+            <button id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul id="menu" class="hidden">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#old">Old</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#large">Large</a></li>
+                <li><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temples</h2>
+        <section class="grid">
+            <figure>
+                <img src="images/accra-ghana-temple-758797-wallpaper.jpg" alt="Temple Accra Ghana">
+                <figcaption>Temple Accra Ghana</figcaption>
+            </figure>
+            <figure>
+                <img src="images/accra-ghana-temple-759296-wallpaper.jpg" alt="TTemple Accra Ghana">
+                <figcaption>Temple Accra Ghana</figcaption>
+            </figure>
+            <figure>
+                <img src="images/accra-ghana-temple-759299-wallpaper.jpg" alt="Temple Accra Ghana">
+                <figcaption>Temple Accra Ghana</figcaption>
+            </figure>
+            <figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Walber Rosa. Rio de Janeiro, Brazil.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
