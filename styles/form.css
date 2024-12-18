@@ -125,3 +125,26 @@ footer p {
     margin: 0;
     font-size: 0.9rem;
 }
+/* Importando fontes diretamente no CSS */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5WZLCzYlKw.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/opensans/v28/mem8YaGs126MiZpBA-UFUKWyV9hvIq.woff2') format('woff2');
+}
+
+/* Aplicando as fontes */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
