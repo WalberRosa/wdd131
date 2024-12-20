@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low-Carb Stir Fry Recipe</title>
+    <meta name="description" content="A quick and delicious low-carb stir fry recipe for healthy eating.">
+    <meta name="Author" content="Walber Barreto Rosa">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <h1>Low-Carb Stir Fry</h1>
+        <p>A flavorful and healthy option for a quick dinner.</p>
+    </header>
+
+    <main class="container">
+        <section class="recipe-details">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 tablespoon olive oil or sesame oil</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 tablespoon ginger, minced</li>
+                <li>1 cup broccoli florets</li>
+                <li>1 cup bell peppers, sliced</li>
+                <li>1 cup zucchini, sliced</li>
+                <li>1/2 cup snap peas</li>
+                <li>200g chicken breast or tofu, cubed</li>
+                <li>2 tablespoons soy sauce (or tamari for gluten-free)</li>
+                <li>1 tablespoon sesame seeds (optional)</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+        </section>
+
+        <section class="recipe-details">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Heat the oil in a large skillet or wok over medium-high heat.</li>
+                <li>Add the garlic and ginger, cooking until fragrant, about 1 minute.</li>
+                <li>Add the chicken or tofu to the skillet and cook until browned and fully cooked. Remove and set aside.</li>
+                <li>In the same skillet, add the broccoli, bell peppers, zucchini, and snap peas. Stir fry for 5-7 minutes until tender-crisp.</li>
+                <li>Return the chicken or tofu to the skillet. Stir in the soy sauce and cook for an additional 2-3 minutes.</li>
+                <li>Season with salt and pepper to taste. Garnish with sesame seeds if desired.</li>
+                <li>Serve hot and enjoy your low-carb meal!</li>
+            </ol>
+        </section>
+
+        <section class="recipe-details">
+            <h2>Quick Tip</h2>
+            <p>For extra flavor, drizzle with a small amount of chili oil or add a squeeze of fresh lime before serving.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Healthy Cooking. All rights reserved.</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        // Dynamic Year and Last Modified in Footer
+        document.addEventListener("DOMContentLoaded", () => {
+            const yearElement = document.getElementById("currentYear");
+            const lastModifiedElement = document.getElementById("lastModified");
+
+            const currentYear = new Date().getFullYear();
+            const lastModified = document.lastModified;
+
+            if (yearElement) {
+                yearElement.textContent = currentYear;
+            }
+            if (lastModifiedElement) {
+                lastModifiedElement.textContent = `Last Modified: ${lastModified}`;
+            }
+        });
+    </script>
+</body>
+</html>

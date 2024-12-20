@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Cooking - Recipes</title>
+    <meta name="Author" content="Walber Barreto Rosa">
+    <meta name="description" content="Healthy Cooking and Recipes - Easy recipes and healthy eating tips.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html" class="active">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <h1>Recipes</h1>
+        <p>Find the perfect recipe for any occasion!</p>
+    </header>
+    <main>
+        <section class="filters">
+            <h2>Filter by Category</h2>
+            <button class="filter-button active" data-category="all">All</button>
+            <button class="filter-button" data-category="vegetarian">Vegetarian</button>
+            <button class="filter-button" data-category="gluten-free">Gluten-Free</button>
+            <button class="filter-button" data-category="low-carb">Low-Carb</button>
+        </section>
+        <section class="recipes">
+            <article class="recipe-card" data-category="vegetarian">
+                <h3>Vegetarian Pasta</h3>
+                <img src="images/Vegetarian Pasta.jpeg" alt="Vegetarian Pasta" loading="lazy">
+                <p>A delicious and healthy vegetarian meal.</p>
+                <button class="view-recipe" data-recipe="vegetarian-pasta.html">View Recipe</button>
+            </article>
+            <article class="recipe-card" data-category="gluten-free">
+                <h3>Gluten-Free Pancakes</h3>
+                <img src="images/Gluten-Free Pancakes.jpeg" alt="Gluten-Free Pancakes" loading="lazy">
+                <p>Perfect for a light and satisfying breakfast.</p>
+                <button class="view-recipe" data-recipe="gluten-free-pancakes.html">View Recipe</button>
+            </article>
+            <article class="recipe-card" data-category="low-carb">
+                <h3>Low-Carb Stir Fry</h3>
+                <img src="images/Low-Carb Stir Fry.jpeg" alt="Low-Carb Stir Fry" loading="lazy">
+                <p>A quick and easy dinner option.</p>
+                <button class="view-recipe" data-recipe="low-carb-stir-fry.html">View Recipe</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Healthy Cooking. All rights reserved. <span id="lastModified"></span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

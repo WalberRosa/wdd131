@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Cooking - Home</title>
+    <meta name="Author" content="Walber Barreto Rosa">
+    <meta name="description" content="Discover healthy and delicious recipes, meal planning tips, and a vibrant community dedicated to healthy cooking.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Healthy Cooking</h1>
+        <p>Your trusted guide for healthy, delicious, and easy-to-make meals.</p>
+    </header>
+
+    <main>
+        <!-- Introductory Section -->
+        <section class="intro">
+            <h2>Why Choose Healthy Cooking?</h2>
+            <p>Healthy Cooking is dedicated to helping you embrace a nutritious lifestyle. From quick weekday meals to special dinner recipes, we offer tips and ideas that transform your cooking experience.</p>
+            <img src="images/A variety of healthy dishes on a table.jpeg" alt="A variety of healthy dishes on a table" loading="lazy">
+        </section>
+
+        <!-- Key Features Section -->
+        <section class="features">
+            <h2>Our Key Features</h2>
+            <div class="feature-grid">
+                <article class="feature">
+                    <h3>Easy Recipes</h3>
+                    <p>Step-by-step instructions to create meals that suit every taste and dietary preference.</p>
+                    <img src="images/Easy recipes.jpeg" alt="Easy recipes" loading="lazy">
+                </article>
+                <article class="feature">
+                    <h3>Meal Planning</h3>
+                    <p>Tools and templates to organize your meals for the week and reduce food waste.</p>
+                    <img src="images/Meal planning.jpeg" alt="Meal planning" loading="lazy">
+                </article>
+                <article class="feature">
+                    <h3>Nutrition Tips</h3>
+                    <p>Expert advice to balance your meals and make healthier choices daily.</p>
+                    <img src="images/Nutrition tips.jpeg" alt="Nutrition tips" loading="lazy">
+                </article>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="community">
+            <h2>Join Our Community</h2>
+            <p>Healthy Cooking is more than just recipes. It's a vibrant community where food enthusiasts share ideas, experiences, and inspiration.</p>
+            <ul>
+                <li>Access exclusive recipes and content.</li>
+                <li>Connect with like-minded individuals.</li>
+                <li>Receive expert guidance and support.</li>
+            </ul>
+            <a href="about.html" class="cta-button">Learn More About Us</a>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter and get the latest recipes, tips, and updates straight to your inbox.</p>
+            <form id="newsletterForm" action="subscribe.html" method="post">
+                <label for="newsletterName">Name:</label>
+                <input type="text" id="newsletterName" name="name" placeholder="Your Name" required>
+
+                <label for="newsletterEmail">Email:</label>
+                <input type="email" id="newsletterEmail" name="email" placeholder="Your Email" required>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What People Are Saying</h2>
+            <blockquote>
+                <p>"Healthy Cooking transformed the way I prepare meals for my family. The recipes are so easy and delicious!"</p>
+                <footer>- Maria J.</footer>
+            </blockquote>
+            <blockquote>
+                <p>"The meal planning tools have helped me save so much time and money. Highly recommend it!"</p>
+                <footer>- James L.</footer>
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Healthy Cooking. All rights reserved.</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

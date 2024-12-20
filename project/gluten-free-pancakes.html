@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gluten-Free Pancakes Recipe</title>
+    <meta name="description" content="Learn how to make delicious gluten-free pancakes with this simple recipe.">
+    <meta name="Author" content="Walber Barreto Rosa">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <h1>Gluten-Free Pancakes</h1>
+        <p>Perfect for a light and satisfying breakfast.</p>
+    </header>
+    
+    <main class="container">
+        <section class="recipe-details">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 cup gluten-free all-purpose flour</li>
+                <li>2 tablespoons sugar</li>
+                <li>2 teaspoons baking powder</li>
+                <li>1/4 teaspoon salt</li>
+                <li>1 cup milk (dairy or non-dairy)</li>
+                <li>1 large egg</li>
+                <li>2 tablespoons melted butter or coconut oil</li>
+                <li>1 teaspoon vanilla extract</li>
+            </ul>
+        </section>
+
+        <section class="recipe-details">
+            <h2>Instructions</h2>
+            <ol>
+                <li>In a mixing bowl, combine the flour, sugar, baking powder, and salt.</li>
+                <li>In another bowl, whisk together the milk, egg, melted butter, and vanilla extract.</li>
+                <li>Pour the wet ingredients into the dry ingredients and stir until just combined. Avoid overmixing.</li>
+                <li>Heat a non-stick skillet over medium heat and lightly grease it with butter or oil.</li>
+                <li>Pour 1/4 cup of batter onto the skillet for each pancake. Cook until bubbles form on the surface, then flip and cook until golden brown.</li>
+                <li>Serve warm with your favorite toppings, such as maple syrup, fresh berries, or a sprinkle of powdered sugar.</li>
+            </ol>
+        </section>
+
+        <section class="recipe-details">
+            <h2>Quick Tip</h2>
+            <p>For fluffier pancakes, let the batter rest for 5-10 minutes before cooking.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Healthy Cooking. All rights reserved.</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        // Dynamic Year and Last Modified in Footer
+        document.addEventListener("DOMContentLoaded", () => {
+            const yearElement = document.getElementById("currentYear");
+            const lastModifiedElement = document.getElementById("lastModified");
+
+            const currentYear = new Date().getFullYear();
+            const lastModified = document.lastModified;
+
+            if (yearElement) {
+                yearElement.textContent = currentYear;
+            }
+            if (lastModifiedElement) {
+                lastModifiedElement.textContent = `Last Modified: ${lastModified}`;
+            }
+        });
+    </script>
+</body>
+</html>

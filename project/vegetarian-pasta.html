@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarian Pasta Recipe</title>
+    <meta name="description" content="Learn how to make a quick and delicious vegetarian pasta with fresh ingredients.">
+    <meta name="Author" content="Walber Barreto Rosa">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <h1>Vegetarian Pasta</h1>
+        <p>A refreshing and healthy pasta dish packed with vibrant flavors.</p>
+    </header>
+
+    <main class="container">
+        <section class="recipe-details">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>250g spaghetti or your favorite pasta</li>
+                <li>2 tablespoons olive oil</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 cup cherry tomatoes, halved</li>
+                <li>1 zucchini, sliced</li>
+                <li>1 cup spinach leaves</li>
+                <li>1/4 cup grated Parmesan cheese (optional)</li>
+                <li>Salt and pepper to taste</li>
+                <li>Fresh basil leaves for garnish</li>
+            </ul>
+        </section>
+
+        <section class="recipe-details">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Cook the pasta according to package instructions. Reserve 1/2 cup of pasta water, then drain and set aside.</li>
+                <li>In a large skillet, heat the olive oil over medium heat. Add the garlic and sauté until fragrant, about 1 minute.</li>
+                <li>Add the cherry tomatoes and zucchini to the skillet. Cook for 5-7 minutes until the vegetables are tender.</li>
+                <li>Stir in the spinach and cook until wilted, about 2 minutes.</li>
+                <li>Add the cooked pasta to the skillet and toss to combine. Use the reserved pasta water to adjust the consistency if needed.</li>
+                <li>Season with salt and pepper to taste. Serve hot, topped with Parmesan cheese and fresh basil leaves.</li>
+            </ol>
+        </section>
+
+        <section class="recipe-details">
+            <h2>Quick Tip</h2>
+            <p>For extra protein, add chickpeas or tofu cubes to the pasta.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Healthy Cooking. All rights reserved.</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        // Dynamic Year and Last Modified in Footer
+        document.addEventListener("DOMContentLoaded", () => {
+            const yearElement = document.getElementById("currentYear");
+            const lastModifiedElement = document.getElementById("lastModified");
+
+            const currentYear = new Date().getFullYear();
+            const lastModified = document.lastModified;
+
+            if (yearElement) {
+                yearElement.textContent = currentYear;
+            }
+            if (lastModifiedElement) {
+                lastModifiedElement.textContent = `Last Modified: ${lastModified}`;
+            }
+        });
+    </script>
+</body>
+</html>

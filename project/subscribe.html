@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Confirmation</title>
+    <meta name="Author" content="Walber Barreto Rosa">
+    <meta name="description" content="Thank you for subscribing to Healthy Cooking!">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <h1>Subscription Confirmation</h1>
+    </header>
+
+    <main class="text-center">
+        <section class="confirmation">
+            <h2>Thank You for Subscribing!</h2>
+            <p>Your subscription to <strong>Healthy Cooking</strong> is confirmed. You will now receive updates, recipes, and tips directly in your inbox.</p>
+
+            <div class="subscription-details">
+                <h3>What's Next?</h3>
+                <ul>
+                    <li>Check your email for a welcome message.</li>
+                    <li>Explore our latest <a href="recipes.html">healthy recipes</a>.</li>
+                    <li>Join our <a href="about.html">community</a> for more inspiration.</li>
+                </ul>
+            </div>
+
+            <a href="index.html" class="cta-button">Back to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Healthy Cooking. All rights reserved.</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        // Dynamic Year and Last Modified in Footer
+        document.addEventListener("DOMContentLoaded", () => {
+            const yearElement = document.getElementById("currentYear");
+            const lastModifiedElement = document.getElementById("lastModified");
+
+            const currentYear = new Date().getFullYear();
+            const lastModified = document.lastModified;
+
+            if (yearElement) {
+                yearElement.textContent = currentYear;
+            }
+            if (lastModifiedElement) {
+                lastModifiedElement.textContent = `Last Modified: ${lastModified}`;
+            }
+        });
+    </script>
+</body>
+</html>
