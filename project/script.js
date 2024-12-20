@@ -97,16 +97,18 @@ faqToggles.forEach(toggle => {
 
 // Newsletter Subscription - Enhanced Confirmation
 const newsletterForm = document.getElementById("newsletterForm");
+
 if (newsletterForm) {
     newsletterForm.addEventListener("submit", event => {
         const name = document.getElementById("newsletterName").value.trim();
         const email = document.getElementById("newsletterEmail").value.trim();
 
         if (!name || !email) {
-            alert("Both name and email are required to subscribe.");
+            alert("Both name and email are required!");
             event.preventDefault();
         } else {
             alert(`Thank you for subscribing, ${name}!`);
+            // O navegador será redirecionado para subscribe.html automaticamente
         }
     });
 }
